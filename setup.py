@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
+#from pip.req import parse_requirements
 import re, ast
+from pip._internal.req import parse_requirements
 
 # get version from __version__ variable in fedex_integration/__init__.py
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
